@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   # s.ios.deployment_target = '5.0'
   s.requires_arc = true
 
-  s.source_files = 'JDReleaseNote'
+  s.source_files = 'JDReleaseNote/JDReleaseNote/*.{h,m}'
   s.resources = 'JDReleaseNote/JDReleaseNote/*.png', 'JDReleaseNote/JDReleaseNote/*.xib', 'JDReleaseNote/JDReleaseNote/ReleaseNotes.plist'
 
   # s.public_header_files = 'JDReleaseNote/JDReleaseNote/*.h'
