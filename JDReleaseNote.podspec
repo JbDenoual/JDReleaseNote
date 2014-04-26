@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.source_files = 'JDReleaseNote'
-  s.resources = 'JDReleaseNote/JDReleaseNote/*.png', 'JDReleaseNote/JDReleaseNote/*.xib'
+  s.resources = 'JDReleaseNote/JDReleaseNote/*.png', 'JDReleaseNote/JDReleaseNote/*.xib', 'JDReleaseNote/JDReleaseNote/ReleaseNotes.plist'
 
   # s.public_header_files = 'JDReleaseNote/JDReleaseNote/*.h'
   # s.frameworks = 'Foundation'

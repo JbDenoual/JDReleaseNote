@@ -19,6 +19,7 @@
 		4095976818F0C983009916E2 /* dark_cross@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4095976518F0C983009916E2 /* dark_cross@2x.png */; };
 		4095977018F0C98D009916E2 /* JDReleaseNote.m in Sources */ = {isa = PBXBuildFile; fileRef = 4095976A18F0C98D009916E2 /* JDReleaseNote.m */; };
 		4095977118F0C98D009916E2 /* JDReleaseNoteView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4095976C18F0C98D009916E2 /* JDReleaseNoteView.m */; };
+		40A01120190C1E1E004D3D4F /* ReleaseNotes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 40A0111F190C1E1E004D3D4F /* ReleaseNotes.plist */; };
 		40E1679F18F5CDE100F4AD59 /* UIColor+HexString.m in Sources */ = {isa = PBXBuildFile; fileRef = 40E1679E18F5CDE100F4AD59 /* UIColor+HexString.m */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +63,7 @@
 		4095976B18F0C98D009916E2 /* JDReleaseNoteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDReleaseNoteView.h; sourceTree = "<group>"; };
 		4095976C18F0C98D009916E2 /* JDReleaseNoteView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDReleaseNoteView.m; sourceTree = "<group>"; };
 		4095976D18F0C98D009916E2 /* JDReleaseNoteView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JDReleaseNoteView.xib; sourceTree = "<group>"; };
+		40A0111F190C1E1E004D3D4F /* ReleaseNotes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ReleaseNotes.plist; sourceTree = "<group>"; };
 		40E1679D18F5CDE100F4AD59 /* UIColor+HexString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexString.h"; sourceTree = "<group>"; };
 		40E1679E18F5CDE100F4AD59 /* UIColor+HexString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexString.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -131,6 +133,7 @@
 				4095976318F0C983009916E2 /* alert_message_icon@2x.png */,
 				4095976418F0C983009916E2 /* dark_cross.png */,
 				4095976518F0C983009916E2 /* dark_cross@2x.png */,
+				40A0111F190C1E1E004D3D4F /* ReleaseNotes.plist */,
 				4095974018F0C970009916E2 /* Supporting Files */,
 			);
 			path = JDReleaseNote;
@@ -233,6 +236,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40A01120190C1E1E004D3D4F /* ReleaseNotes.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
