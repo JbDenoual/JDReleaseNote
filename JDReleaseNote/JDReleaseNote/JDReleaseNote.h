@@ -12,6 +12,8 @@
 
 + (void)displayReleaseNoteBandIfNeeded;
 + (void)saveInstallVersionAsAnteriorIfNeeded;
+
++ (void)displayReleaseNoteBand;
 + (void)displayReleaseNotesFullScreen;
 
 @end

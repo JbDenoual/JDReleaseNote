@@ -27,7 +27,6 @@ NSString * const kJDLastReleaseNoteSeen = @"com.jaydlabs.releasenote.lastRelease
 
 + (BOOL)needDisplayReleaseNote
 {
-    return YES; //TODO
     NSString * versionString = [[NSBundle mainBundle] objectForInfoDictionaryKey: @"CFBundleShortVersionString"];
     
     if ([versionString isEqualToString:[JDReleaseNote installVersion]]) {
@@ -61,6 +60,12 @@ NSString * const kJDLastReleaseNoteSeen = @"com.jaydlabs.releasenote.lastRelease
 + (void)saveInstallVersionAsAnteriorIfNeeded;
 {
     [JDReleaseNote setInstallVersion:@"0.0.0"];
+}
+
+
++ (void)displayReleaseNoteBand
+{
+    [JDReleaseNoteView showBand];
 }
 
 + (void)displayReleaseNotesFullScreen

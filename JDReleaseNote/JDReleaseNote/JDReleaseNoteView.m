@@ -18,6 +18,7 @@ CGFloat const kJDDisplayAnimationDuration   = 0.3;
 
 //Root keys
 NSString * const kJDFileName   = @"ReleaseNotes";
+NSString * const kJDFileNameExample   = @"ReleaseNotes-Example";
 NSString * const kJDRootFonts   = @"fonts";
 NSString * const kJDRootColors   = @"colors";
 NSString * const kJDRootNotes   = @"notes";
@@ -255,8 +256,15 @@ NSString * const kJDVersion             = @"version";
 - (NSDictionary *)releaseNotesDictionary
 {
     if (!_releaseNotesDictionary) {
+        
         NSString *releaseNotesPath = [[NSBundle mainBundle] pathForResource:kJDFileName ofType:@"plist"];
         _releaseNotesDictionary = [[NSDictionary alloc] initWithContentsOfFile:releaseNotesPath];
+        
+        if (!_releaseNotesDictionary) {
+            
+            NSString *releaseNotesPathExample = [[NSBundle mainBundle] pathForResource:kJDFileNameExample ofType:@"plist"];
+            _releaseNotesDictionary = [[NSDictionary alloc] initWithContentsOfFile:releaseNotesPathExample];
+        }
     }
     
     return _releaseNotesDictionary;
