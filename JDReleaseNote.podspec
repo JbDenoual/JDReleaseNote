@@ -6,7 +6,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = "JDReleaseNote"
-  s.version          = "0.1.0"
+  s.version          = "0.1.1"
   s.summary          = "A short description of JDReleaseNote."
   s.description      = <<-DESC
                        An optional longer description of JDReleaseNote

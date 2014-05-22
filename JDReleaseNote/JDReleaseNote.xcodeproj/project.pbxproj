@@ -20,10 +20,10 @@
 		4095977018F0C98D009916E2 /* JDReleaseNote.m in Sources */ = {isa = PBXBuildFile; fileRef = 4095976A18F0C98D009916E2 /* JDReleaseNote.m */; };
 		4095977118F0C98D009916E2 /* JDReleaseNoteView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4095976C18F0C98D009916E2 /* JDReleaseNoteView.m */; };
 		40A01120190C1E1E004D3D4F /* ReleaseNotes-Example.plist in Resources */ = {isa = PBXBuildFile; fileRef = 40A0111F190C1E1E004D3D4F /* ReleaseNotes-Example.plist */; };
-		40A01121190D26A8004D3D4F /* JDReleaseNoteView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4095976D18F0C98D009916E2 /* JDReleaseNoteView.xib */; };
 		40A01122190D26A8004D3D4F /* alert_message_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4095976318F0C983009916E2 /* alert_message_icon@2x.png */; };
 		40A01123190D26A8004D3D4F /* dark_cross.png in Resources */ = {isa = PBXBuildFile; fileRef = 4095976418F0C983009916E2 /* dark_cross.png */; };
 		40A01124190D26A8004D3D4F /* dark_cross@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4095976518F0C983009916E2 /* dark_cross@2x.png */; };
+		40A01126190D2975004D3D4F /* JDReleaseNoteView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4095976D18F0C98D009916E2 /* JDReleaseNoteView.xib */; };
 		40E1679F18F5CDE100F4AD59 /* UIColor+HexString.m in Sources */ = {isa = PBXBuildFile; fileRef = 40E1679E18F5CDE100F4AD59 /* UIColor+HexString.m */; };
 /* End PBXBuildFile section */
 
@@ -42,7 +42,7 @@
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "include/$(PRODUCT_NAME)";
-			dstSubfolderSpec = 16;
+			dstSubfolderSpec = 7;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,7 +240,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40A01121190D26A8004D3D4F /* JDReleaseNoteView.xib in Resources */,
+				40A01126190D2975004D3D4F /* JDReleaseNoteView.xib in Resources */,
 				40A01122190D26A8004D3D4F /* alert_message_icon@2x.png in Resources */,
 				40A01123190D26A8004D3D4F /* dark_cross.png in Resources */,
 				40A01124190D26A8004D3D4F /* dark_cross@2x.png in Resources */,

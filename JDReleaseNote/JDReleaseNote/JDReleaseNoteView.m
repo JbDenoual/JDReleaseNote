@@ -211,12 +211,11 @@ NSString * const kJDVersion             = @"version";
     NSDictionary *fontsDictionary = [[NSDictionary alloc] initWithDictionary:self.releaseNotesDictionary[kJDRootFonts]];
     
     NSNumber *titleFontSize = (NSNumber *)fontsDictionary[kJDNoteTitleFontSize];
-    NSString *titleWithNewLine = [NSString stringWithFormat:@"%@\n\n", title];
+    NSString *titleWithNewLine = [NSString stringWithFormat:@"\n\n%@\n\n", title];
     
     NSMutableParagraphStyle *paragraph = [[NSMutableParagraphStyle alloc] init];
     paragraph.alignment = NSTextAlignmentCenter;
-    NSDictionary *attributesDictionary = @{NSFontAttributeName:[UIFont fontWithName:fontsDictionary[kJDNoteTitleFontName] size:titleFontSize.floatValue],
-                                           NSParagraphStyleAttributeName: paragraph, NSForegroundColorAttributeName: [UIColor whiteColor]};
+    NSDictionary *attributesDictionary = @{NSFontAttributeName:[UIFont fontWithName:fontsDictionary[kJDNoteTitleFontName] size:titleFontSize.floatValue], NSParagraphStyleAttributeName: paragraph, NSForegroundColorAttributeName: [UIColor whiteColor]};
     NSAttributedString *attrbutedTitle = [[NSAttributedString alloc] initWithString:titleWithNewLine attributes:attributesDictionary];
     
     [_content appendAttributedString:attrbutedTitle];
@@ -231,8 +230,7 @@ NSString * const kJDVersion             = @"version";
     
     NSMutableParagraphStyle *paragraph = [[NSMutableParagraphStyle alloc] init];
     paragraph.alignment = NSTextAlignmentLeft;
-    NSDictionary *attributesDictionary = @{NSFontAttributeName:[UIFont fontWithName:fontsDictionary[kJDNoteContentFontName] size:contentFontSize.floatValue],
-                                           NSParagraphStyleAttributeName: paragraph, NSForegroundColorAttributeName: [UIColor whiteColor]};
+    NSDictionary *attributesDictionary = @{NSFontAttributeName:[UIFont fontWithName:fontsDictionary[kJDNoteContentFontName] size:contentFontSize.floatValue],NSParagraphStyleAttributeName: paragraph, NSForegroundColorAttributeName: [UIColor whiteColor]};
     NSAttributedString *attrbutedTitle = [[NSAttributedString alloc] initWithString:contentWithNewLine attributes:attributesDictionary];
     
     [_content appendAttributedString:attrbutedTitle];

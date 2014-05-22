@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		406CD418192DFD6C0011C43D /* JDReleaseNoteView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 406CD417192DFD6C0011C43D /* JDReleaseNoteView.xib */; };
 		40A010E4190C16A1004D3D4F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40A010E3190C16A1004D3D4F /* Foundation.framework */; };
 		40A010E6190C16A1004D3D4F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40A010E5190C16A1004D3D4F /* CoreGraphics.framework */; };
 		40A010E8190C16A1004D3D4F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40A010E7190C16A1004D3D4F /* UIKit.framework */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		406CD417192DFD6C0011C43D /* JDReleaseNoteView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JDReleaseNoteView.xib; sourceTree = "<group>"; };
 		40A010E0190C16A1004D3D4F /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40A010E3190C16A1004D3D4F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		40A010E5190C16A1004D3D4F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -118,6 +120,7 @@
 		40A010E9190C16A1004D3D4F /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				406CD417192DFD6C0011C43D /* JDReleaseNoteView.xib */,
 				40A010F2190C16A1004D3D4F /* JDAppDelegate.h */,
 				40A010F3190C16A1004D3D4F /* JDAppDelegate.m */,
 				40A010F5190C16A1004D3D4F /* Main_iPhone.storyboard */,
@@ -238,6 +241,7 @@
 			files = (
 				40A010FA190C16A1004D3D4F /* Main_iPad.storyboard in Resources */,
 				40A010FF190C16A1004D3D4F /* Images.xcassets in Resources */,
+				406CD418192DFD6C0011C43D /* JDReleaseNoteView.xib in Resources */,
 				40A010F7190C16A1004D3D4F /* Main_iPhone.storyboard in Resources */,
 				40A010EE190C16A1004D3D4F /* InfoPlist.strings in Resources */,
 			);
