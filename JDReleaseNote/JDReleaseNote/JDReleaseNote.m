@@ -89,6 +89,7 @@ NSString * const kJDLastReleaseNoteSeen = @"com.jaydlabs.releasenote.lastRelease
     NSString *installVersion = [[NSUserDefaults standardUserDefaults] objectForKey:kJDInstallVersion];
     if (!installVersion) {
         installVersion = [[NSBundle mainBundle] objectForInfoDictionaryKey: @"CFBundleShortVersionString"];
+        [[NSUserDefaults standardUserDefaults] setObject:installVersion forKey:kJDInstallVersion];
     }
     
     return installVersion;
