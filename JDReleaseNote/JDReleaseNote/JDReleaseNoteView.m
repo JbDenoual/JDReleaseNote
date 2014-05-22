@@ -12,7 +12,6 @@
 //View
 NSInteger const kJDBandHeight               = 86;
 NSInteger const kJDBandFadeArea             = 100;
-NSInteger const kJDTextViewTopEdge          = 40;
 
 CGFloat const kJDDisplayAnimationDuration   = 0.3;
 
@@ -203,7 +202,6 @@ NSString * const kJDVersion             = @"version";
     }
     
     _textView.attributedText = _content;
-    _textView.contentInset = UIEdgeInsetsMake(kJDTextViewTopEdge, 0, 0, 0);
 }
 
 - (void)addTitle:(NSString*)title

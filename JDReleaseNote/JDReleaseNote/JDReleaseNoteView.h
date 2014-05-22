@@ -11,7 +11,6 @@
 //View
 NSInteger const kJDBandHeight;
 NSInteger const kJDBandFadeArea;
-NSInteger const kJDTextViewTopEdge;
 
 //Root keys
 NSString * const kJDFileName;
