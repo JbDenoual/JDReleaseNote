@@ -59,7 +59,15 @@ NSString * const kJDLastReleaseNoteSeen = @"com.jaydlabs.releasenote.lastRelease
 
 + (void)saveInstallVersionAsAnteriorIfNeeded;
 {
-    [JDReleaseNote setInstallVersion:@"0.0.0"];
+    if (![JDReleaseNote hasInstallVersion]) {
+        [JDReleaseNote setInstallVersion:@"0.0.0"];
+    }
+}
+
++ (BOOL)hasInstallVersion;
+{
+    NSString *installVersion = [[NSUserDefaults standardUserDefaults] objectForKey:kJDInstallVersion];
+    return installVersion!=nil;
 }
 
 
