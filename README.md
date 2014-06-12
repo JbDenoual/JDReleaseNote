@@ -1,20 +1,6 @@
 # JDReleaseNote
 
-[![Version](http://cocoapod-badges.herokuapp.com/v/JDReleaseNote/badge.png)](http://cocoadocs.org/docsets/JDReleaseNote)
-[![Platform](http://cocoapod-badges.herokuapp.com/p/JDReleaseNote/badge.png)](http://cocoadocs.org/docsets/JDReleaseNote)
-
-## Usage
-
-To run the example project; clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
-
-## Installation
-
-JDReleaseNote is available through [CocoaPods](http://cocoapods.org), to install
-it simply add the following line to your Podfile:
-
-    pod "JDReleaseNote"
+Note : Not on CocoaPods yet, it's a work in progress.
 
 ## Author
 
