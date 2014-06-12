@@ -75,7 +75,7 @@ NSString * const kJDLastReleaseNoteSeen = @"com.jaydlabs.releasenote.lastRelease
 {
     [JDReleaseNoteView showBand];
 }
-
+    
 + (void)displayReleaseNotesFullScreen
 {
     [JDReleaseNoteView showFullScreen];
