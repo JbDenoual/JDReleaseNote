@@ -44,6 +44,7 @@ NSString * const kJDNoteTitleText       = @"noteTitleText";
 NSString * const kJDNoteContentText     = @"noteContentText";
 NSString * const kJDVersion             = @"version";
 
+static void (^displayBlock)(void);
 
 @interface JDReleaseNoteView () <UIGestureRecognizerDelegate>
 
@@ -113,6 +114,10 @@ NSString * const kJDVersion             = @"version";
     }];
 }
 
++ (void)setDisplayBlock:(void (^)(void))completion
+{
+    displayBlock = completion;
+}
 
 #pragma mark - Instance methods
 #pragma mark - View Lifecycle
@@ -322,6 +327,10 @@ NSString * const kJDVersion             = @"version";
 
 - (IBAction)onBand:(id)sender
 {
+    if (displayBlock) {
+        displayBlock();
+    }
+    
     [self removeGestureRecognizer:_panGestureRecognizer];
     
     [UIView animateWithDuration:0.3 animations:^{

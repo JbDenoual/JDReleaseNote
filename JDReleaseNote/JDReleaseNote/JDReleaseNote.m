@@ -81,6 +81,10 @@ NSString * const kJDLastReleaseNoteSeen = @"com.jaydlabs.releasenote.lastRelease
     [JDReleaseNoteView showFullScreen];
 }
 
++ (void)setDisplayCompletionBlock:(void (^)(void))completion
+{
+    [JDReleaseNoteView setDisplayBlock:completion];
+}
 
 #pragma mark - UserDefaults
 

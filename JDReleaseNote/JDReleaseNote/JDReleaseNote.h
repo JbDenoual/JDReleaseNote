@@ -16,4 +16,6 @@
 + (void)displayReleaseNoteBand;
 + (void)displayReleaseNotesFullScreen;
 
++ (void)setDisplayCompletionBlock:(void (^)(void))completion;
+
 @end

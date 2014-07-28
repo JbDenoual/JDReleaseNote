@@ -46,4 +46,6 @@ NSString * const kJDVersion;
 + (void)showBand;
 + (void)showFullScreen;
 
++ (void)setDisplayBlock:(void (^)(void))completion;
+
 @end
