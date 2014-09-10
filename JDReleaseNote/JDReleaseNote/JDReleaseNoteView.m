@@ -89,6 +89,7 @@ static void (^displayBlock)(void);
     //TODO verifier property status bar vc, à setter à NO
     
     CGFloat applicationHeight = ([[UIScreen mainScreen] applicationFrame].size.height+[[UIApplication sharedApplication] statusBarFrame].size.height);
+    CGFloat applicationWidth = [[UIScreen mainScreen] applicationFrame].size.width;
     
     UIWindow *window = [UIApplication sharedApplication].keyWindow;
     NSArray *nib = [[NSBundle mainBundle] loadNibNamed:NSStringFromClass([JDReleaseNoteView class]) owner:nil options:nil];
@@ -98,6 +99,7 @@ static void (^displayBlock)(void);
     CGRect newFrame = releaseNoteView.frame;
     newFrame.origin.y = -applicationHeight;
     newFrame.size.height = applicationHeight;
+    newFrame.size.width = applicationWidth;
     releaseNoteView.frame = newFrame;
     
     [window addSubview:releaseNoteView];
